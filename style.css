@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+h1 {
+    margin-top: 0px;
+}
+
+.Underline {
+    border-bottom: black solid 2px;
+}
+
+
+#PanelContainer {
+    display: flex;
+    margin-top: 8px;
+    width: 100vw;
+    height:calc(100vh - 16px);
+}
+#ListContainer {
+    background-color: lightgreen;
+    flex-grow: 1;
+    margin: 0px 8px;
+}
+
+#SearchContainer {
+    width: calc(330px - 16px);
+    background-color: lightgray;
+    margin-right: 8px;
+    border-radius: 8px;
+    padding: 16px;
+    border: 2px gray solid;
+}
+
+#SearchBar {
+    font-size: 18px;
+    width: calc(100% - 8px);
+    padding: 4px;
+}
+#SortByContainer {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    border: solid black 1px;
+    border-radius: 4px;
+    padding: 0px 0px;
+    background-color: white;
+}
+#SortByContainer button {
+    flex-grow: 1;
+    background-color: white;
+    border: none;
+    height: 100%;
+    height: 24px;
+    border-right: solid black 1px;
+}
+#SortByContainer button:last-child {
+    border-right: none;
+}
+#SortActive {
+    background-color: lightgreen !important;
+}
+
+#TypeGridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border: solid black 1px;
+    border-radius: 4px;
+    padding: 0px 0px;
+    background-color: white;
+
+}
+#TypeGridContainer input {
+    display: none;
+}
+#TypeGridContainer input + label{
+    flex-grow: 1;
+    padding: 4px;
+    transition: all 0.5s;
+}
+#TypeGridContainer input + label:hover{
+    text-decoration:underline;
+}
+#TypeGridContainer input + label{
+    flex-grow: 1;
+    padding: 4px;
+}
+#TypeGridContainer input:checked + label {
+    filter: brightness(110%);
+}
+
+#grass + label { background-color: rgb(16, 130, 39); color: white;}
