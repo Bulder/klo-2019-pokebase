@@ -35,7 +35,8 @@ h1 {
 
 #SearchBar {
     font-size: 18px;
-    width: calc(100% - 8px);
+    box-sizing: border-box;
+    width: 100%;
     padding: 4px;
 }
 #SortByContainer {
@@ -63,6 +64,7 @@ h1 {
 }
 
 #TypeGridContainer {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -76,19 +78,24 @@ h1 {
     display: none;
 }
 #TypeGridContainer input + label{
+    color: black;
+    border-left: solid 0px;
+    user-select: none;
+    font-size: 14px;
     flex-grow: 1;
-    padding: 4px;
-    transition: all 0.5s;
+    padding: 6px 4px;
+    transition: all 0.25s;
+    text-align: center;
+    width: 25%;
 }
 #TypeGridContainer input + label:hover{
-    text-decoration:underline;
+    filter: brightness(135%);
 }
-#TypeGridContainer input + label{
-    flex-grow: 1;
-    padding: 4px;
-}
+
 #TypeGridContainer input:checked + label {
-    filter: brightness(130%);
+    padding-right: 0px;
+    border-left: solid 4px rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 #water + label { background-color: rgb(60, 114, 232);}
