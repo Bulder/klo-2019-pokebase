@@ -88,7 +88,24 @@ h1 {
     padding: 4px;
 }
 #TypeGridContainer input:checked + label {
-    filter: brightness(110%);
+    filter: brightness(130%);
 }
 
-#grass + label { background-color: rgb(16, 130, 39); color: white;}
+#water + label { background-color: rgb(60, 114, 232);}
+#normal + label { background-color: rgb(201, 206, 237);}
+#flying + label { background-color: rgb(167, 198, 229);}
+#grass + label { background-color: rgb(16, 130, 39);}
+#psychic + label { background-color: rgb(212, 71, 255);}
+#bug + label { background-color: rgb(119, 244, 117);}
+#fire + label { background-color: rgb(255, 71, 5);}
+#poison + label { background-color: rgb(201, 0, 237);}
+#ground + label { background-color: rgb(183, 152, 49);}
+#rock + label { background-color: rgb(163, 141, 70);}
+#fighting + label { background-color: rgb(255, 95, 50);}
+#dark + label { background-color: rgb(132, 132, 145);}
+#steel + label { background-color: rgb(160, 160, 188);}
+#electric + label { background-color: rgb(237, 237, 35);}
+#dragon + label { background-color: rgb(152, 74, 201);}
+#fairy + label { background-color: rgb(244, 0, 232);}
+#ghost + label { background-color: rgb(146, 109, 168);}
+#ice + label { background-color: rgb(32, 234, 234);}
