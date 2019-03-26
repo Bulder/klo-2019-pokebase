@@ -49,6 +49,7 @@ h1 {
     background-color: white;
 }
 #SortByContainer button {
+    color: black;
     flex-grow: 1;
     background-color: white;
     border: none;
@@ -91,13 +92,12 @@ h1 {
 #TypeGridContainer input + label:hover{
     filter: brightness(135%);
 }
-
 #TypeGridContainer input:checked + label {
     padding-right: 0px;
     border-left: solid 4px rgb(0, 0, 0);
     font-weight: bold;
 }
-
+/* Type colors */
 #water + label { background-color: rgb(60, 114, 232);}
 #normal + label { background-color: rgb(201, 206, 237);}
 #flying + label { background-color: rgb(167, 198, 229);}
@@ -116,3 +116,45 @@ h1 {
 #fairy + label { background-color: rgb(244, 0, 232);}
 #ghost + label { background-color: rgb(146, 109, 168);}
 #ice + label { background-color: rgb(32, 234, 234);}
+
+
+#ColorContainer {
+    display: flex;
+    height: 40px;
+}
+#ColorContainer input {
+    transition: all 0.25s;
+    border-bottom: black solid 0px;
+    display: block;
+    margin: 0px;
+    margin-bottom: 8px;
+    box-sizing: content-box;
+    flex-grow: 1;
+    height: 32px;
+    max-width: 32px;
+    -webkit-appearance: none;
+}
+#ColorContainer input:hover {
+    filter: opacity(50%);
+}
+#ColorContainer input:checked {
+    margin-bottom: 0px;
+    border-bottom: black solid 8px;
+}
+
+/* no color */
+#anyColor {
+    background: rgb(235,235,235);
+    background: linear-gradient(135deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 47%, rgba(0,0,0,1) 47%, rgba(0,0,0,1) 53%, rgba(235,235,235,1) 53%, rgba(235,235,235,1) 100%);
+}
+/* Color colors */
+#blue { background-color: blue; }
+#yellow { background-color: yellow; }
+#green { background-color: green; }
+#red {background-color: red; }
+#black { background-color: black; }
+#brown { background-color: brown; }
+#purple { background-color: purple; }
+#gray { background-color: gray; }
+#white { background-color: white; }
+#pink { background-color: pink; }
