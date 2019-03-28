@@ -6,7 +6,18 @@ body {
 h1 {
     margin-top: 0px;
 }
-
+button {
+    font-family: monospace;
+    color: black;
+    flex-grow: 1;
+    background-color: white;
+    border: none;
+    height: 100%;
+    height: 24px;
+}
+button:hover {
+    filter:brightness(90%);
+}
 .Underline {
     border-bottom: black solid 2px;
 }
@@ -49,13 +60,7 @@ h1 {
     background-color: white;
 }
 #SortByContainer button {
-    color: black;
-    flex-grow: 1;
-    background-color: white;
-    border: none;
-    height: 100%;
-    height: 24px;
-    border-right: solid black 1px;
+    border-right: 1px black solid;
 }
 #SortByContainer button:last-child {
     border-right: none;
@@ -64,6 +69,10 @@ h1 {
     background-color: lightgreen !important;
 }
 
+/*type grid reset button color hack, this is the Fairy type color*/
+#TypeGridContainer + .resetButton {
+    border-top: 1px rgb(244, 0, 232) solid;
+}
 #TypeGridContainer {
     overflow: hidden;
     display: flex;
@@ -71,9 +80,9 @@ h1 {
     align-content: center;
     border: solid black 1px;
     border-radius: 4px;
+    border-bottom-left-radius: 0px;
     padding: 0px 0px;
     background-color: white;
-
 }
 #TypeGridContainer input {
     display: none;
@@ -117,13 +126,24 @@ h1 {
 #ghost + label { background-color: rgb(146, 109, 168);}
 #ice + label { background-color: rgb(32, 234, 234);}
 
+.resetButton {
+    position: relative;
+    top: -1px;
+    border: solid black 1px;
+    border-top: none;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
 
 #ColorContainer {
     border: solid black 1px;
     border-radius: 4px;
+    border-bottom-left-radius: 0px;
     overflow: hidden;
     display: flex;
     height: 40px;
+    background-color: white;
 }
 #ColorContainer input {
     transition: all 0.25s;
@@ -165,31 +185,39 @@ h1 {
 #BodyTypeContainer {
     border: solid black 1px;
     border-radius: 4px;
+    border-bottom-left-radius: 0px;
     overflow: hidden;
     flex-wrap: wrap;
     display: flex;
+    background-color: white;
 }
 #BodyTypeContainer input {
-    background-repeat: no-repeat;
-    background-position: center;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+#BodyTypeContainer input + label img {
+    pointer-events: none;
+    width: calc(100% - 4px);
+    margin: 0px 2px;
+}
+#BodyTypeContainer input + label {
     transition: all 0.25s;
-    border: black solid 0px;
+    border-bottom: black solid 0px;
+    padding-bottom: 4px;
     display: block;
-    padding: 2px;
-    box-sizing: content-box;
+    box-sizing: border-box;
     flex-grow: 0;
-    height: 32px;
-    width: 32px;
+    width: calc(100% / 7);
     -webkit-appearance: none;
 }
-#BodyTypeContainer input:checked {
-    padding: 0px;
-    border: black solid 2px;
+
+#BodyTypeContainer input:checked + label {
+    padding-bottom: 0px;
+    border-bottom: black solid 4px;
 }
 /*body types*/
 #anyType {
     background: rgb(235,235,235);
     background: linear-gradient(135deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 47%, rgba(0,0,0,1) 47%, rgba(0,0,0,1) 53%, rgba(235,235,235,1) 53%, rgba(235,235,235,1) 100%);
 }
-#head { background-image: url("./img/bodytypes/Body01.png"); }
-#headAndLegs { background-image: url("./img/bodytypes/Body04.png"); }
