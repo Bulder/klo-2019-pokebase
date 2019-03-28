@@ -119,6 +119,9 @@ h1 {
 
 
 #ColorContainer {
+    border: solid black 1px;
+    border-radius: 4px;
+    overflow: hidden;
     display: flex;
     height: 40px;
 }
@@ -158,3 +161,35 @@ h1 {
 #gray { background-color: gray; }
 #white { background-color: white; }
 #pink { background-color: pink; }
+
+#BodyTypeContainer {
+    border: solid black 1px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+}
+#BodyTypeContainer input {
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.25s;
+    border: black solid 0px;
+    display: block;
+    padding: 2px;
+    box-sizing: content-box;
+    flex-grow: 0;
+    height: 32px;
+    width: 32px;
+    -webkit-appearance: none;
+}
+#BodyTypeContainer input:checked {
+    padding: 0px;
+    border: black solid 2px;
+}
+/*body types*/
+#anyType {
+    background: rgb(235,235,235);
+    background: linear-gradient(135deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 47%, rgba(0,0,0,1) 47%, rgba(0,0,0,1) 53%, rgba(235,235,235,1) 53%, rgba(235,235,235,1) 100%);
+}
+#head { background-image: url("./img/bodytypes/Body01.png"); }
+#headAndLegs { background-image: url("./img/bodytypes/Body04.png"); }
