@@ -8,6 +8,10 @@
     <body>
         <div id="PanelContainer">
             <div id="ListContainer">
+                <div class="pokeCard">
+                    <img src="./img/sprites/forward/1.png"/>
+                    <p>#001 Bub</p>
+                </div>
             </div>
             <div id="SearchContainer">
                 <h1 class="Underline">Search</h1>
@@ -139,4 +143,36 @@
         </div>
 
     </body>
+    <script type="text/javascript">
+        function parsePokemon () {
+            var json = JSON.parse(this.responseText);
+            console.log(json)
+            var newJson = {};
+            newJson["name"] = json["name"];
+            newJson["types"] = [];
+            for (var i = 0; i < json["types"].length; i++) {
+                newJson["types"].push(json["types"][i]["type"]["name"]);
+            }
+            newJson["weight"] = json["weight"]/10;
+            newJson["height"] = json["height"]/10;
+            newJson["color"] = "";
+            newJson["bodytype"] = "";
+            newJson["stats"] = {};
+            for (var i = 0; i < json["stats"].length; i++) {
+                var tempString = json["stats"][i]["stat"]["name"];
+                newJson["stats"][[tempString]] = json["stats"][i]["base_stat"];
+            }
+            location.href = "data:application/octet-stream," + encodeURIComponent(JSON.stringify(newJson));
+        }
+
+
+
+        function convertPokemon(id) {
+            var oReq = new XMLHttpRequest();
+            oReq.addEventListener("load", parsePokemon);
+            oReq.open("GET", "https://pokeapi.co/api/v2/pokemon/" + id + "/");
+            oReq.send();
+        }
+
+    </script>
 </html>

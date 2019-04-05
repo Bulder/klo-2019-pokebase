@@ -22,6 +22,28 @@ button:hover {
     border-bottom: black solid 2px;
 }
 
+.pokeCard {
+    background-color: lightyellow;
+    width: 135px;
+    height: 135px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+.pokeCard img {
+    margin-top: -12px;
+    min-height: 128px;
+    min-width: 128px;
+    image-rendering: pixelated !important;
+    image-rendering: crisp-edges;
+}
+.pokeCard p {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
 
 #PanelContainer {
     display: flex;
