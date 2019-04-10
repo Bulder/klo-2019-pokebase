@@ -1,1 +1,1 @@
-{"name":"bulbasaur","types":["poison","grass"],"weight":6.9,"height":0.7,"color":"","bodytype":"","stats":{"speed":45,"special-defense":65,"special-attack":65,"defense":49,"attack":49,"hp":45}}
+{"name":"bulbasaur","types":["poison","grass"],"weight":6.9,"height":0.7,"color":"green","bodytype":"","stats":{"speed":45,"special-defense":65,"special-attack":65,"defense":49,"attack":49,"hp":45}}

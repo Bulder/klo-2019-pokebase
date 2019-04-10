@@ -1,1 +1,1 @@
-{"name":"gloom","types":["poison","grass"],"weight":8.6,"height":0.8,"color":"","bodytype":"","stats":{"speed":40,"special-defense":75,"special-attack":85,"defense":70,"attack":65,"hp":60}}
+{"name":"gloom","types":["poison","grass"],"weight":8.6,"height":0.8,"color":"blue","bodytype":"","stats":{"speed":40,"special-defense":75,"special-attack":85,"defense":70,"attack":65,"hp":60}}
