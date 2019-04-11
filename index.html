@@ -63,7 +63,7 @@
                     <input type="checkbox" name="ice" id="ice">
                     <label for="ice">Ice</label>
                 </div>
-                <button class="resetButton" id="colorUnfilterButton">Unfilter</button>
+                <button class="resetButton" id="TypeUnfilterButton">Unfilter</button>
 
                 <h3>Color</h3>
                 <div id="ColorContainer">
@@ -138,7 +138,7 @@
                         <img src="./img/bodytypes/Body04.png">
                     </label>
                 </div>
-                <button class="resetButton" id="colorUnfilterButton">Unfilter</button>
+                <button class="resetButton" id="BodyTypeUnfilterButton">Unfilter</button>
             </div>
         </div>
 
@@ -172,6 +172,26 @@
             oReq.addEventListener("load", parsePokemon);
             oReq.open("GET", "https://pokeapi.co/api/v2/pokemon/" + id + "/");
             oReq.send();
+        }
+
+        let typeGridResetButton = document.getElementById("TypeUnfilterButton");
+        typeGridResetButton.onclick = unfilterTypeGrid;
+
+        function unfilterTypeGrid() {
+          var un = document.getElementById('TypeGridContainer').getElementsByTagName("input");
+            for (var i = 0; i < un.length; i++) {
+              un[i].checked = false;
+            }
+        }
+
+        let ColorResetButton = document.getElementById("colorUnfilterButton");
+        ColorResetButton.onclick = unfilterColor;
+
+        function unfilterColor() {
+          var un = document.getElementById('ColorContainer').getElementsByTagName("input");
+            for (var i = 0; i < un.length; i++) {
+              un[i].checked = false;
+            }
         }
 
     </script>
