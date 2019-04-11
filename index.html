@@ -194,5 +194,15 @@
             }
         }
 
+        let BodyTypeResetButton = document.getElementById("BodyTypeUnfilterButton");
+        BodyTypeResetButton.onclick = unfilterBodyType;
+
+        function unfilterBodyType() {
+          var un = document.getElementById('BodyTypeContainer').getElementsByTagName("input");
+            for (var i = 0; i < un.length; i++) {
+              un[i].checked = false;
+            }
+        }
+
     </script>
 </html>
