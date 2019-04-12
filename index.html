@@ -147,13 +147,17 @@
 
         var Pokemon = [];
         for (var i = 1; i < 151; i++) {
-            fetch("dex/" + i)
-            .then(res => res.json())
-            .then((out) => {
-                console.log(i, out);
-                Pokemon[i] = out;
-            })
-            .catch(err => {throw err});
+            const response = await fetch("dex/" + i);
+            const json = await response.json();
+            Pokemon[i] = json;
+
+            //fetch("dex/" + i)
+            //.then(res => res.json())
+            //.then((out) => {
+            //    console.log(i, out);
+            //    Pokemon[i] = out;
+            //})
+            //.catch(err => {throw err});
         }
 
 
@@ -162,7 +166,7 @@
         typeGridResetButton.onclick = unfilterTypeGrid;
 
         function unfilterTypeGrid() {
-          var un = document.getElementById('TypeGridContainer').getElementsByTagName("input");
+            var un = document.getElementById('TypeGridContainer').getElementsByTagName("input");
             for (var i = 0; i < un.length; i++) {
               un[i].checked = false;
             }
@@ -172,7 +176,7 @@
         ColorResetButton.onclick = unfilterColor;
 
         function unfilterColor() {
-          var un = document.getElementById('ColorContainer').getElementsByTagName("input");
+            var un = document.getElementById('ColorContainer').getElementsByTagName("input");
             for (var i = 0; i < un.length; i++) {
               un[i].checked = false;
             }
@@ -182,7 +186,7 @@
         BodyTypeResetButton.onclick = unfilterBodyType;
 
         function unfilterBodyType() {
-          var un = document.getElementById('BodyTypeContainer').getElementsByTagName("input");
+            var un = document.getElementById('BodyTypeContainer').getElementsByTagName("input");
             for (var i = 0; i < un.length; i++) {
               un[i].checked = false;
             }
