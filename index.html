@@ -140,8 +140,8 @@
         </div>
         <template id="pokemonCardTemplate">
             <div class="pokeCard" id="1">
-                <img src="./img/sprites/forward/1.png"/>
-                <p>#001 Bub</p>
+                <img src="./img/sprites/forward/1.png" class id="pokeCardImage"/>
+                <p id="pokeCardText">#001 Bub</p>
             </div>
         </template>
 
@@ -160,8 +160,10 @@
                 Pokemon[i] = json;
                 var templateCopy = document.importNode(cardTemplate.content, true);
                 templateCopy.getElementById("1").id = i;
-                templateCopy.getElementsByTagName("img").src = "./img/sprites/forward/" + i + ".png";
-                templateCopy.getElementsByTagName("p") = "#" + i + Pokemon[i]["name"];
+                templateCopy.getElementById("pokeCardImage").src = "./img/sprites/forward/" + i + ".png";
+                templateCopy.getElementById("pokeCardImage").id = "";
+                templateCopy.getElementById("pokeCardText").textContent = "#" + i + Pokemon[i]["name"];
+                templateCopy.getElementById("pokeCardText").id = "";
                 pokemonListContainer.appendChild(templateCopy);
             }
         }
