@@ -146,23 +146,15 @@
     <script type="text/javascript">
 
         var Pokemon = [];
-
-        for (var i = 1; i < 151; i++) {
-            const request = async() => {
+        const request = async() => {
+            for (var i = 1; i < 151; i++) {
                 const response = await fetch("dex/" + i);
                 const json = await response.json();
+                console.log(i. json);
                 Pokemon[i] = json;
             }
-            request();
-            //fetch("dex/" + i)
-            //.then(res => res.json())
-            //.then((out) => {
-            //    console.log(i, out);
-            //    Pokemon[i] = out;
-            //})
-            //.catch(err => {throw err});
         }
-
+        request();
 
 
         var typeGridResetButton = document.getElementById("TypeUnfilterButton");
