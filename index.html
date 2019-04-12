@@ -8,10 +8,7 @@
     <body>
         <div id="PanelContainer">
             <div id="ListContainer">
-                <div class="pokeCard">
-                    <img src="./img/sprites/forward/1.png"/>
-                    <p>#001 Bub</p>
-                </div>
+
             </div>
             <div id="SearchContainer">
                 <h1 class="Underline">Search</h1>
@@ -141,17 +138,31 @@
                 <button class="resetButton" id="BodyTypeUnfilterButton">Unfilter</button>
             </div>
         </div>
+        <template id="pokemonCardTemplate">
+            <div class="pokeCard" id="1">
+                <img src="./img/sprites/forward/1.png"/>
+                <p>#001 Bub</p>
+            </div>
+        </template>
 
     </body>
     <script type="text/javascript">
 
+        var pokemonListContainer = document.getElementById("ListContainer");
+        var cardTemplate = document.getElementById("pokemonCardTemplate");
         var Pokemon = [];
         const request = async() => {
+
             for (var i = 1; i < 151; i++) {
                 const response = await fetch("dex/" + i);
                 const json = await response.json();
                 console.log(i. json);
                 Pokemon[i] = json;
+                var templateCopy = document.importNode(cardTemplate.content, true);
+                templateCopy.getElementById("1").id = i;
+                templateCopy.getElementsByTagName("img").src = "./img/sprites/forward/" + i + ".png";
+                templateCopy.getElementsByTagName("p") = "#" + i + Pokemon[i]["name"];
+                pokemonListContainer.appendChild(templateCopy);
             }
         }
         request();
