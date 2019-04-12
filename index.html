@@ -144,37 +144,17 @@
 
     </body>
     <script type="text/javascript">
-        function parsePokemon () {
-            var json = JSON.parse(this.responseText);
-            console.log(json)
-            var newJson = {};
-            newJson["name"] = json["name"];
-            newJson["types"] = [];
-            for (var i = 0; i < json["types"].length; i++) {
-                newJson["types"].push(json["types"][i]["type"]["name"]);
-            }
-            newJson["weight"] = json["weight"]/10;
-            newJson["height"] = json["height"]/10;
-            newJson["color"] = "";
-            newJson["bodytype"] = "";
-            newJson["stats"] = {};
-            for (var i = 0; i < json["stats"].length; i++) {
-                var tempString = json["stats"][i]["stat"]["name"];
-                newJson["stats"][[tempString]] = json["stats"][i]["base_stat"];
-            }
-            location.href = "data:application/octet-stream," + encodeURIComponent(JSON.stringify(newJson));
+
+        var Pokemon = [];
+        for (var i = 1; i <= 151; i++) {
+            fetch("./dex/" + i)
+            .then()
+            Pokemon[i] =
         }
 
 
 
-        function convertPokemon(id) {
-            var oReq = new XMLHttpRequest();
-            oReq.addEventListener("load", parsePokemon);
-            oReq.open("GET", "https://pokeapi.co/api/v2/pokemon/" + id + "/");
-            oReq.send();
-        }
-
-        let typeGridResetButton = document.getElementById("TypeUnfilterButton");
+        var typeGridResetButton = document.getElementById("TypeUnfilterButton");
         typeGridResetButton.onclick = unfilterTypeGrid;
 
         function unfilterTypeGrid() {
@@ -184,7 +164,7 @@
             }
         }
 
-        let ColorResetButton = document.getElementById("colorUnfilterButton");
+        var ColorResetButton = document.getElementById("colorUnfilterButton");
         ColorResetButton.onclick = unfilterColor;
 
         function unfilterColor() {
@@ -194,7 +174,7 @@
             }
         }
 
-        let BodyTypeResetButton = document.getElementById("BodyTypeUnfilterButton");
+        var BodyTypeResetButton = document.getElementById("BodyTypeUnfilterButton");
         BodyTypeResetButton.onclick = unfilterBodyType;
 
         function unfilterBodyType() {
