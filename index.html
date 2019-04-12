@@ -146,10 +146,11 @@
     <script type="text/javascript">
 
         var Pokemon = [];
-        for (var i = 1; i <= 151; i++) {
+        for (var i = 1; i < 151; i++) {
             fetch("dex/" + i)
             .then(res => res.json())
             .then((out) => {
+                console.log(i, out);
                 Pokemon[i] = out;
             })
             .catch(err => {throw err});
