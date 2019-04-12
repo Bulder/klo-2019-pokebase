@@ -24,20 +24,20 @@ button:hover {
 
 .pokeCard {
     background-color: lightyellow;
-    width: 135px;
-    height: 135px;
+    width: 176px;
+    height: 176px;
     margin: 10px;
     text-align: center;
     position: relative;
 }
 .pokeCard img {
-    margin-top: -12px;
     min-height: 128px;
     min-width: 128px;
     image-rendering: pixelated !important;
     image-rendering: crisp-edges;
 }
 .pokeCard p {
+    text-transform: capitalize;
     position: absolute;
     bottom: 0px;
     text-align: center;
@@ -55,6 +55,9 @@ button:hover {
     background-color: lightgreen;
     flex-grow: 1;
     margin: 0px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
 }
 
 #SearchContainer {

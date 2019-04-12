@@ -162,7 +162,7 @@
                 templateCopy.getElementById("1").id = i;
                 templateCopy.getElementById("pokeCardImage").src = "./img/sprites/forward/" + i + ".png";
                 templateCopy.getElementById("pokeCardImage").id = "";
-                templateCopy.getElementById("pokeCardText").textContent = "#" + i + Pokemon[i]["name"];
+                templateCopy.getElementById("pokeCardText").textContent = "#" + i + " - " + Pokemon[i]["name"];
                 templateCopy.getElementById("pokeCardText").id = "";
                 pokemonListContainer.appendChild(templateCopy);
             }
