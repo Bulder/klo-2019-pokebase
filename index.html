@@ -146,11 +146,14 @@
     <script type="text/javascript">
 
         var Pokemon = [];
-        for (var i = 1; i < 151; i++) {
-            const response = await fetch("dex/" + i);
-            const json = await response.json();
-            Pokemon[i] = json;
 
+        for (var i = 1; i < 151; i++) {
+            const request = async() => {
+                const response = await fetch("dex/" + i);
+                const json = await response.json();
+                Pokemon[i] = json;
+            }
+            request();
             //fetch("dex/" + i)
             //.then(res => res.json())
             //.then((out) => {
