@@ -147,9 +147,12 @@
 
         var Pokemon = [];
         for (var i = 1; i <= 151; i++) {
-            fetch("./dex/" + i)
-            .then()
-            Pokemon[i] =
+            fetch("dex/" + i)
+            .then(res => res.json())
+            .then((out) => {
+                Pokemon[i] = JSON.parse(out);
+            })
+            .catch(err => {throw err});
         }
 
 
