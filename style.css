@@ -58,9 +58,11 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
+    justify-content: space-evenly;
 }
 
 #SearchContainer {
+    flex-shrink: 0;
     width: calc(330px - 16px);
     background-color: lightgray;
     margin-right: 8px;
