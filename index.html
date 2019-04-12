@@ -150,7 +150,7 @@
             fetch("dex/" + i)
             .then(res => res.json())
             .then((out) => {
-                Pokemon[i] = JSON.parse(out);
+                Pokemon[i] = out;
             })
             .catch(err => {throw err});
         }
