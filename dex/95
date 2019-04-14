@@ -1,1 +1,1 @@
-{"name":"onix","types":["ground","rock"],"weight":210,"height":8.8,"color":"","bodytype":"","stats":{"speed":70,"special-defense":45,"special-attack":30,"defense":160,"attack":45,"hp":35}}
+{"name":"onix","types":["ground","rock"],"weight":210,"height":8.8,"color":"gray","bodytype":"","stats":{"speed":70,"special-defense":45,"special-attack":30,"defense":160,"attack":45,"hp":35}}

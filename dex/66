@@ -1,1 +1,1 @@
-{"name":"machop","types":["fighting"],"weight":19.5,"height":0.8,"color":"","bodytype":"","stats":{"speed":35,"special-defense":35,"special-attack":35,"defense":50,"attack":80,"hp":70}}
+{"name":"machop","types":["fighting"],"weight":19.5,"height":0.8,"color":"gray","bodytype":"","stats":{"speed":35,"special-defense":35,"special-attack":35,"defense":50,"attack":80,"hp":70}}

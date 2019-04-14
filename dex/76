@@ -1,1 +1,1 @@
-{"name":"golem","types":["ground","rock"],"weight":300,"height":1.4,"color":"","bodytype":"","stats":{"speed":45,"special-defense":65,"special-attack":55,"defense":130,"attack":120,"hp":80}}
+{"name":"golem","types":["ground","rock"],"weight":300,"height":1.4,"color":"brown","bodytype":"","stats":{"speed":45,"special-defense":65,"special-attack":55,"defense":130,"attack":120,"hp":80}}

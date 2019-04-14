@@ -1,1 +1,1 @@
-{"name":"gastly","types":["poison","ghost"],"weight":0.1,"height":1.3,"color":"","bodytype":"","stats":{"speed":80,"special-defense":35,"special-attack":100,"defense":30,"attack":35,"hp":30}}
+{"name":"gastly","types":["poison","ghost"],"weight":0.1,"height":1.3,"color":"purple","bodytype":"","stats":{"speed":80,"special-defense":35,"special-attack":100,"defense":30,"attack":35,"hp":30}}

@@ -1,1 +1,1 @@
-{"name":"machamp","types":["fighting"],"weight":130,"height":1.6,"color":"","bodytype":"","stats":{"speed":55,"special-defense":85,"special-attack":65,"defense":80,"attack":130,"hp":90}}
+{"name":"machamp","types":["fighting"],"weight":130,"height":1.6,"color":"gray","bodytype":"","stats":{"speed":55,"special-defense":85,"special-attack":65,"defense":80,"attack":130,"hp":90}}

@@ -1,1 +1,1 @@
-{"name":"graveler","types":["ground","rock"],"weight":105,"height":1,"color":"","bodytype":"","stats":{"speed":35,"special-defense":45,"special-attack":45,"defense":115,"attack":95,"hp":55}}
+{"name":"graveler","types":["ground","rock"],"weight":105,"height":1,"color":"brown","bodytype":"","stats":{"speed":35,"special-defense":45,"special-attack":45,"defense":115,"attack":95,"hp":55}}
