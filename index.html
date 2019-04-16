@@ -300,7 +300,7 @@
             pokeName[0].textContent = "#" + i + " " + Pokemon[i]["name"].toUpperCase();
             typeContainer.innerHTML = "";
             for(var type in Pokemon[i]["types"]) {
-                typeContainer.innerHTML = typeContainer.innerHTML + "<h2>" + type.toUpperCase() + "</h2>";
+                typeContainer.innerHTML = typeContainer.innerHTML + "<h2>" + Pokemon[i]["types"][type].toUpperCase() + "</h2>";
             }
             infoContainer.children[0].textContent = "Weight: " + parseFloat(Pokemon[i]["weight"] / 10).toFixed(2);
             infoContainer.children[1].textContent = "Height: " + parseFloat(Pokemon[i]["height"] / 10).toFixed(2);
