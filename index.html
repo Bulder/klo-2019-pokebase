@@ -296,20 +296,20 @@
         var statTable = document.getElementById('statTable');
         var stats = ["hp", "attack", "defense", "special-attack", "special-defense", "speed"];
         function showInfoPanel(i) {
-            pokePic.src = "./img/sprites/forward/" + i + ".png";
-            pokeName.textContent = "#" + i + " " + Pokemon[i]["name"];
+            pokePic[0].src = "./img/sprites/forward/" + i + ".png";
+            pokeName[0].textContent = "#" + i + " " + Pokemon[i]["name"].toUpperCase();
             typeContainer.innerHTML = "";
             for(var type in Pokemon[i]["types"]) {
                 typeContainer.innerHTML = typeContainer.innerHTML + "<h2>" + type.toUpperCase() + "</h2>";
             }
-            infoContainer.children[0].textContent = "Weight: " + (Pokemon[i]["weight"] / 10);
-            infoContainer.children[1].textContent = "Height: " + (Pokemon[i]["height"] / 10);
-            infoContainer.children[2].textContent = "Color: " + Pokemon[i]["color"];
+            infoContainer.children[0].textContent = "Weight: " + parseFloat(Pokemon[i]["weight"] / 10).toFixed(2);
+            infoContainer.children[1].textContent = "Height: " + parseFloat(Pokemon[i]["height"] / 10).toFixed(2);
+            infoContainer.children[2].textContent = "Color: " + Pokemon[i]["color"].toUpperCase();
             infoContainer.children[3].children[0].src = "./img/footprints/" + i + ".png";
             cry.src = "./aud/cries/" + i + ".ogg";
             for(var o = 0; o < 6; o++) {
                 console.log(i, o, stats[i]);
-                statTable.children[0].children[o].children[1].textContent = Pokemon[i]["stats"][stats[i]];
+                statTable.children[0].children[o].children[1].textContent = Pokemon[i]["stats"][stats[o]];
             }
             document.getElementById("popupContainer").style.display = "";
         }
