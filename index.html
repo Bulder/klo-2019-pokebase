@@ -294,7 +294,7 @@
         var infoContainer = document.getElementById('InfoContainer');
         var cry = document.getElementById('CryContainer').getElementsByTagName('audio');
         var statTable = document.getElementById('statTable');
-        var stats = ["hp", "attack", "defense", "special-attack", "special-defense", "speed"]
+        var stats = ["hp", "attack", "defense", "special-attack", "special-defense", "speed"];
         function showInfoPanel(i) {
             pokePic.src = "./img/sprites/forward/" + i + ".png";
             pokeName.textContent = "#" + i + " " + Pokemon[i]["name"];
@@ -307,8 +307,9 @@
             infoContainer.children[2].textContent = "Color: " + Pokemon[i]["color"];
             infoContainer.children[3].children[0].src = "./img/footprints/" + i + ".png";
             cry.src = "./aud/cries/" + i + ".ogg";
-            for(var i = 0; i < 6; i++) {
-                statTable.children[0].children[i].children[1] = Pokemon[i]["stats"][stats[i]];
+            for(var o = 0; o < 6; o++) {
+                console.log(i, o, stats[i]);
+                statTable.children[0].children[o].children[1].textContent = Pokemon[i]["stats"][stats[i]];
             }
             document.getElementById("popupContainer").style.display = "";
         }
