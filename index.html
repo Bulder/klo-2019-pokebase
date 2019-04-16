@@ -6,6 +6,69 @@
         <title>KLO-Pokebase</title>
     </head>
     <body>
+
+        <div id="popupContainer" style="display: none;">
+            <div id="PokemonPanelContainer">
+                <div id="InfoPanel">
+                    <div id="PokepicContainer">
+                        <button type="button" name="flipButton"></button>
+                        <img src="./img/sprites/forward/1.png" alt="">
+                    </div>
+                    <div id="NameContainer">
+                        <h2>#001 Bulbasaur</h2>
+                    </div>
+                    <div id="TypeContainer">
+                        <h2>Grass</h2>
+                        <h2>Poison</h2>
+                    </div>
+                    <div id="InfoContainer">
+                        <p>Weight: 0kg</p>
+                        <p>Height: 0m</p>
+                        <p>Color: Green</p>
+                        <p>Footprint: <img src="./img/footprints/1.png" alt=""></p>
+                        <p>Bodytype: <img src="./img/bodytypes/Body08.png" alt=""></p>
+                    </div>
+                    <div id="CryContainer">
+                        <audio controls src="./aud/cries/1.ogg" type="audio/ogg"> </audio>
+                    </div>
+                </div>
+
+                <div id="StatPanel">
+                    <table id="statTable">
+                        <tr>
+                            <td>HP:</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>Attack:</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <td>Defense:</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <td>Sp. Attack:</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>Sp. Defense:</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>Speed:</td>
+                            <td>45</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <button type="button" name="closeButton" id="closeInfoButton">X</button>
+            <button type="button" name="nextPokemon" id="nextInfoButton">></button>
+            <button type="button" name="previousPokemon" id="previousInfoButton"><</button>
+        </div>
+
+
+
         <div id="PanelContainer">
             <div id="ListContainer">
 
@@ -223,9 +286,32 @@
                 }
             }
             console.log(SeachbarFilterList);
-
         }
 
+        var pokePic = document.getElementById('PokepicContainer').getElementsByTagName('img');
+        var pokeName = document.getElementById('NameContainer').getElementsByTagName('h2');
+        var typeContainer = document.getElementById('TypeContainer');
+        var infoContainer = document.getElementById('InfoContainer');
+        var cry = document.getElementById('CryContainer').getElementsByTagName('audio');
+        var statTable = document.getElementById('statTable');
+        var stats = ["hp", "attack", "defense", "special-attack", "special-defense", "speed"]
+        function showInfoPanel(i) {
+            pokePic.src = "./img/sprites/forward/" + i + ".png";
+            pokeName.textContent = "#" + i + " " + Pokemon[i]["name"];
+            typeContainer.innerHTML = "";
+            for(var type in Pokemon[i]["types"]) {
+                typeContainer.innerHTML = typeContainer.innerHTML + "<h2>" + type.toUpperCase() + "</h2>";
+            }
+            infoContainer.children[0].textContent = "Weight: " + (Pokemon[i]["weight"] / 10);
+            infoContainer.children[1].textContent = "Height: " + (Pokemon[i]["height"] / 10);
+            infoContainer.children[2].textContent = "Color: " + Pokemon[i]["color"];
+            infoContainer.children[3].children[1].src = "./img/footprints/" + i + ".png";
+            cry.src = "./aud/cries/" + i + ".ogg";
+            for(var i = 0; i < 6; i++) {
+                statTable.children[0].children[i].children[1] = Pokemon[i]["stats"][stats[i]];
+            }
+            document.getElementById("popupContainer").style.display = "";
+        }
 
     </script>
 </html>

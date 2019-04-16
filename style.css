@@ -252,12 +252,25 @@ button:hover {
     background: linear-gradient(135deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 47%, rgba(0,0,0,1) 47%, rgba(0,0,0,1) 53%, rgba(235,235,235,1) 53%, rgba(235,235,235,1) 100%);
 }
 
+
+#popupContainer {
+    z-index: 999999;
+    background-color: white;
+    border: black solid 2px;
+    border-radius: 6px;
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    height: calc(100vh - 64px);
+    width: calc(100vw - 64px);
+    margin: 0px;
+}
 #PokemonPanelContainer{
-    background: pink;
+    position: relative;
     display: flex;
-    margin: 16px;
-    height: calc(100% - 32px);
+    margin: 0px;
     overflow: auto;
+    height: 100%;
 }
 #PokemonPanelContainer h2 {
     margin: 0px;
@@ -268,9 +281,6 @@ button:hover {
 }
 #PokemonPanelContainer > div {
     border-bottom: none;
-}
-#PokemonPanelContainer > button {
-    position: absolute;
 }
 #InfoPanel {
     max-width: 320px;
@@ -323,4 +333,37 @@ tr td:nth-child(2) {
 }
 #InfoPanel {
     border-right: solid black 2px;
+}
+#popupContainer > button {
+    box-sizing: border-box;
+    position: absolute;
+}
+#closeInfoButton {
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    top: -16px;
+    right: -16px;
+    border-radius: 16px;
+    border: black solid 1px;
+}
+#nextInfoButton {
+    right: -16px;
+    width: 16px;
+    height: 64px;
+    top: calc(50% - 32px);
+    border: black solid 1px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: none;
+}
+#previousInfoButton {
+    left: -16px;
+    width: 16px;
+    height: 64px;
+    top: calc(50% - 32px);
+    border: black solid 1px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: none;
 }
