@@ -305,7 +305,7 @@
             infoContainer.children[0].textContent = "Weight: " + (Pokemon[i]["weight"] / 10);
             infoContainer.children[1].textContent = "Height: " + (Pokemon[i]["height"] / 10);
             infoContainer.children[2].textContent = "Color: " + Pokemon[i]["color"];
-            infoContainer.children[3].children[1].src = "./img/footprints/" + i + ".png";
+            infoContainer.children[3].children[0].src = "./img/footprints/" + i + ".png";
             cry.src = "./aud/cries/" + i + ".ogg";
             for(var i = 0; i < 6; i++) {
                 statTable.children[0].children[i].children[1] = Pokemon[i]["stats"][stats[i]];
