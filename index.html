@@ -153,7 +153,7 @@
         var Pokemon = [];
         const request = async() => {
 
-            for (var i = 1; i < 151; i++) {
+            for (var i = 1; i < 152; i++) {
                 const response = await fetch("dex/" + i);
                 const json = await response.json();
                 console.log(i. json);
@@ -199,6 +199,28 @@
               un[i].checked = false;
             }
         }
+
+        /*function SearchBarFilter(){
+            var input, filter, a, x, y, z, text;
+            input = document.getElementById("SearchContainer")
+            filter = input.value.toUpperCase();
+            a = document.getElementById("")
+        }*/
+
+        var SearchBar = document.getElementById("SearchBar");
+        SearchBar.addEventListener("change", SeachbarFil);
+
+        function SeachbarFil(e){
+            var SeachbarFilterList = [];
+            for (var i = 1; i < 152; i++){
+                if (Pokemon[i]["name"].includes(e["srcElement"]["value"])) {
+                    SearchbarFilterList.push(i);
+                }
+            }
+            print(SeachbarFilterList);
+
+        }
+
 
     </script>
 </html>
