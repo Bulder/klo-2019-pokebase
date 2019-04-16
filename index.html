@@ -213,8 +213,13 @@
         function SeachbarFil(e){
             var SeachbarFilterList = [];
             for (var i = 1; i < 152; i++){
+                var find = document.getElementById(i);
                 if (Pokemon[i]["name"].includes(e["srcElement"]["value"])) {
                     SeachbarFilterList.push(i);
+                    find.style.display = "";
+
+                }else{
+                    find.style.display = "none";
                 }
             }
             console.log(SeachbarFilterList);
