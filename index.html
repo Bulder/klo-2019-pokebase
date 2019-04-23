@@ -288,6 +288,7 @@
             console.log(SeachbarFilterList);
         }
 
+        var PopupContainer = document.getElementById("popupContainer");
         var pokePic = document.getElementById('PokepicContainer').getElementsByTagName('img');
         var pokeName = document.getElementById('NameContainer').getElementsByTagName('h2');
         var typeContainer = document.getElementById('TypeContainer');
@@ -311,8 +312,14 @@
                 console.log(i, o, stats[i]);
                 statTable.children[0].children[o].children[1].textContent = Pokemon[i]["stats"][stats[o]];
             }
-            document.getElementById("popupContainer").style.display = "";
+            PopupContainer.style.display = "";
         }
 
+        var CloseButton = document.getElementById("closeInfoButton");
+        CloseButton.onclick = closeInfoPanel;
+
+        function closeInfoPanel() {
+            PopupContainer.style.display = "none";
+        }
     </script>
 </html>
