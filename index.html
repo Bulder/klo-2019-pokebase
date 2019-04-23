@@ -220,7 +220,6 @@
                 requestList[i] = fetch("dex/" + (i+1));
             }
 
-<<<<<<< HEAD
             await Promise.all(requestList).then(responses => {
 
                 Promise.all(responses).then(results => {
@@ -229,24 +228,6 @@
                     }
                 });
             });
-=======
-            Promise.all(requestList).then(responses => {
-
-                Promise.all(responses).then(results => {
-                    for(i = 0; i < 151; i++) {
-                        console.log(results.Object);
-                    }
-                });
-            });
-
-            var templateCopy = document.importNode(cardTemplate.content, true);
-            templateCopy.getElementById("1").id = i;
-            templateCopy.getElementById("pokeCardImage").src = "./img/sprites/forward/" + i + ".png";
-            templateCopy.getElementById("pokeCardImage").id = "";
-            templateCopy.getElementById("pokeCardText").textContent = "#" + i + " - " + Pokemon[i]["name"];
-            templateCopy.getElementById("pokeCardText").id = "";
-            pokemonListContainer.appendChild(templateCopy);
->>>>>>> 656c84a591c7bd6d35e0daba56a9b18eed4aca11
         }
         //    var templateCopy = document.importNode(cardTemplate.content, true);
         //    templateCopy.getElementById("1").id = i;
