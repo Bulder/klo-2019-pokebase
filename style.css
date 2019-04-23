@@ -263,8 +263,8 @@ button:hover {
     border: black solid 2px;
     border-radius: 6px;
     position: absolute;
-    left: 32px;
-    top: 32px;
+    left: 64px;
+    top: 64px;
     height: calc(100vh - 128px);
     width: calc(100vw - 128px);
     margin: 0px;
