@@ -215,21 +215,28 @@
         var cardTemplate = document.getElementById("pokemonCardTemplate");
         var Pokemon = [];
         const request = async() => {
-
-            for (var i = 1; i < 152; i++) {
-                const response = await fetch("dex/" + i);
-                const json = await response.json();
-                console.log(i. json);
-                Pokemon[i] = json;
-                var templateCopy = document.importNode(cardTemplate.content, true);
-                templateCopy.getElementById("1").id = i;
-                templateCopy.getElementById("pokeCardImage").src = "./img/sprites/forward/" + i + ".png";
-                templateCopy.getElementById("pokeCardImage").id = "";
-                templateCopy.getElementById("pokeCardText").textContent = "#" + i + " - " + Pokemon[i]["name"];
-                templateCopy.getElementById("pokeCardText").id = "";
-                pokemonListContainer.appendChild(templateCopy);
+            var requestList = Array(151);
+            for (var i = 0; i < 151; i++) {
+                requestList[i] = fetch("dex/" + (i+1));
             }
+
+            await Promise.all(requestList).then(responses => {
+
+                Promise.all(responses).then(results => {
+                    for(i = 0; i < 151; i++) {
+                        console.log(results[i].Object);
+                    }
+                });
+            });
         }
+        //    var templateCopy = document.importNode(cardTemplate.content, true);
+        //    templateCopy.getElementById("1").id = i;
+        //    templateCopy.getElementById("pokeCardImage").src = "./img/sprites/forward/" + i + ".png";
+        //    templateCopy.getElementById("pokeCardImage").id = "";
+        //    templateCopy.getElementById("pokeCardText").textContent = "#" + i + " - " + Pokemon[i]["name"];
+        //    templateCopy.getElementById("pokeCardText").id = "";
+        //    pokemonListContainer.appendChild(templateCopy);
+        //}
         request();
 
 
@@ -321,5 +328,8 @@
         function closeInfoPanel() {
             PopupContainer.style.display = "none";
         }
+
+        //var cards = document.getElementsByTagName("ListContainer").childNodes;
+
     </script>
 </html>
