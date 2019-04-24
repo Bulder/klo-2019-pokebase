@@ -333,7 +333,7 @@
         function clickListItem(event) {
             for(i = 0; i < event.path.length; i++) {
                 if(event.path[i].className == "pokeCard") {
-                    showInfoPanel(event.path[i].id);
+                    showInfoPanel(event.composedPath[i].id);
                     break;
                 }
             }
