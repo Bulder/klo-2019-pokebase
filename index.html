@@ -329,9 +329,9 @@
 
         pokemonListContainer.addEventListener("click", clickListItem);
         function clickListItem(event) {
-            for(i = 0; i < event.composedPath.length; i++) {
-                if(event.composedPath[i].className == "pokeCard") {
-                    showInfoPanel(event.composedPath[i].id);
+            for(i = 0; i < event.composedPath().length; i++) {
+                if(event.composedPath()[i].className == "pokeCard") {
+                    showInfoPanel(event.composedPath()[i].id);
 
                     break;
                 }
