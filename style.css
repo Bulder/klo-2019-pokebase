@@ -56,13 +56,13 @@ button:hover {
     height:calc(100vh - 16px);
 }
 #ListContainer {
-    background-color: lightgreen;
     flex-grow: 1;
     margin: 0px 8px;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: flex-start;
 }
 
 #SearchContainer {
