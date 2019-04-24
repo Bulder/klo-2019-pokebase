@@ -313,7 +313,7 @@
             infoContainer.children[2].textContent = "Color: " + Pokemon[i]["color"].toUpperCase();
             infoContainer.children[3].children[0].src = "./img/footprints/" + i + ".png";
             cry.src = "./aud/cries/" + i + ".ogg";
-            cry.load();
+            cry[0].load();
             for(var o = 0; o < 6; o++) {
                 console.log(i, o, stats[i]);
                 statTable.children[0].children[o].children[1].textContent = Pokemon[i]["stats"][stats[o]];
