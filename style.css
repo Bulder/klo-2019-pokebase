@@ -273,7 +273,7 @@ button:hover {
     width: calc(100vw - 128px);
     margin: 0px;
     transition: transform 0.5s;
-    transform: translateY(0px);
+    transform: scale(1);
 }
 #PokemonPanelContainer{
     position: relative;
