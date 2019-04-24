@@ -67,8 +67,6 @@
             <button type="button" name="previousPokemon" id="previousInfoButton"><</button>
         </div>
 
-
-
         <div id="PanelContainer">
             <div id="ListContainer">
                 <h1 id="placeholderHeader">Fetching Pokémon...</h1>
@@ -331,9 +329,10 @@
 
         pokemonListContainer.addEventListener("click", clickListItem);
         function clickListItem(event) {
-            for(i = 0; i < event.path.length; i++) {
-                if(event.path[i].className == "pokeCard") {
+            for(i = 0; i < event.composedPath.length; i++) {
+                if(event.composedPath[i].className == "pokeCard") {
                     showInfoPanel(event.composedPath[i].id);
+
                     break;
                 }
             }
