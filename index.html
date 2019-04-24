@@ -312,7 +312,7 @@
             infoContainer.children[1].textContent = "Height: " + parseFloat(Pokemon[i]["height"] / 10).toFixed(2);
             infoContainer.children[2].textContent = "Color: " + Pokemon[i]["color"].toUpperCase();
             infoContainer.children[3].children[0].src = "./img/footprints/" + i + ".png";
-            cry.src = "./aud/cries/" + i + ".ogg";
+            cry.src[0] = "./aud/cries/" + i + ".ogg";
             cry[0].load();
             for(var o = 0; o < 6; o++) {
                 console.log(i, o, stats[i]);
