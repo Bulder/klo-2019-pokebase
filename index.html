@@ -319,6 +319,7 @@
                 statTable.children[0].children[o].children[1].textContent = Pokemon[i]["stats"][stats[o]];
             }
             PopupContainer.style.display = "";
+            PopupContainer.style.transform = "";
         }
 
         var CloseButton = document.getElementById("closeInfoButton");
@@ -326,6 +327,7 @@
 
         function closeInfoPanel() {
             PopupContainer.style.display = "none";
+            PopupContainer.style.transform = "translateY(10px)"
         }
 
         pokemonListContainer.addEventListener("click", clickListItem);
@@ -333,7 +335,6 @@
             for(i = 0; i < event.composedPath().length; i++) {
                 if(event.composedPath()[i].className == "pokeCard") {
                     showInfoPanel(event.composedPath()[i].id);
-
                     break;
                 }
             }
