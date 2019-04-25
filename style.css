@@ -30,7 +30,7 @@ button:hover {
     box-sizing: border-box;
     cursor: pointer;
     border: solid 1px #0000;
-    transition: border 0.2s;
+    transition: border 0.2s, filter 0.2s;
     border-bottom: #00000075 solid 1px;
     border-radius: 4px;
     width: 176px;
@@ -42,6 +42,7 @@ button:hover {
 .pokeCard img {
     min-height: 128px;
     min-width: 128px;
+    filter: drop-shadow(1px 4px 4px rgba(1, 1, 1, 0.3));
     image-rendering: pixelated !important;
     image-rendering: crisp-edges;
 }
