@@ -308,7 +308,7 @@
             }
             for (var i = 0; i < SearchbarFilterList.length; i++){
                 var color = document.querySelector('input[name="color"]:checked');
-                if (color != undefined) {
+                if (color != null) {
                     if (!Pokemon[SearchbarFilterList[i]]["color"] == color.id){
                         SearchbarFilterList.splice(i,1);
                     }
@@ -316,7 +316,7 @@
             }
             for (var i = 0; i < SearchbarFilterList.length; i++){
                 var bodyType = document.querySelector('input[name="bodyType"]:checked');
-                if(bodyType != undefined) {
+                if(bodyType != null) {
                     if (!Pokemon[SearchbarFilterList[i]]["bodyType"] == bodyType.id){
                         SearchbarFilterList.splice(i,1);
                     }
