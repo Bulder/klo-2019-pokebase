@@ -289,7 +289,7 @@ button:hover {
     display: flex;
     width: 100vw;
     height: 100vh;
-    align-content: center;
+    justify-content: center;
     align-items: center;
 }
 #popupContainer {
@@ -299,9 +299,7 @@ button:hover {
     background-color: white;
     border: black solid 2px;
     border-radius: 6px;
-    position: absolute;
-    left: 64px;
-    top: 64px;
+    max-width: 900px;
     height: calc(100vh - 128px);
     width: calc(100vw - 128px);
     margin: 0px;
