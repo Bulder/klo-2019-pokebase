@@ -289,10 +289,11 @@
             }
             for (var i = 0; i < SearchbarFilterList.length; i++){
                 if (TypeFilter.length == 1){
-                    if (!Pokemon[SeachbarFilterList[i]]["types"].includes(TypeFilter[0]){
+                    if (!Pokemon[SeachbarFilterList[i]]["types"].includes(TypeFilter[0])){
                         SearchbarFilterList.splice(i,1);
                     }
-                }else if (TypeFilter.length == 2) {
+                }
+                else if (TypeFilter.length == 2) {
                     if (!Pokemon[SeachbarFilterList[i]]["types"] == TypeFilter){
                         SearchbarFilterList.splice(i,1);
                     }
