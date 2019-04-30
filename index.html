@@ -301,6 +301,7 @@
         var cry = document.getElementById('CryContainer').getElementsByTagName('audio');
         var statTable = document.getElementById('statTable');
         var stats = ["hp", "attack", "defense", "special-attack", "special-defense", "speed"];
+        var colors = ["rgb(255, 0, 0)", "rgb(240, 128, 48)", "rgb(248, 208, 48)", "rgb(104, 144, 240)", "rgb(120, 200, 80)", "rgb(248, 88, 136)"];
         function showInfoPanel(i) {
             pokePic[0].src = "./img/sprites/forward/" + i + ".png";
             pokeName[0].textContent = "#" + i + " " + Pokemon[i]["name"].toUpperCase();
@@ -315,8 +316,8 @@
             cry[0].src = "./aud/cries/" + i + ".ogg";
             cry[0].load();
             for(var o = 0; o < 6; o++) {
-                console.log(i, o, stats[i]);
                 statTable.children[0].children[o].children[1].textContent = Pokemon[i]["stats"][stats[o]];
+                statTable.children[0].children[o].children[1].style.background = "-webkit-linear-gradient(left, " + colors[o] + " " + (Pokemon[i]["stats"][stats[o]] / 255 * 100) + "%, rgba(0,0,0,0) 0%)";
             }
             PopupContainer.style.display = "";
             PopupContainer.style.transform = "";
