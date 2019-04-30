@@ -293,7 +293,7 @@
                     SearchbarFilterList.push(i+1);
                 }
             }
-            for (var i = SearchbarFilterList.length-1; i > 0; i--){
+            for (var i = SearchbarFilterList.length-1; i >= 0; i--){
                 if (TypeFilter.length == 1){
                     if (!Pokemon[SearchbarFilterList[i]]["types"].includes(TypeFilter[0])){
                         SearchbarFilterList.splice(i,1);
@@ -306,7 +306,7 @@
                 }
             }
             var color = document.querySelector('input[name="color"]:checked');
-            for (var i = SearchbarFilterList.length-1; i > 0; i--){
+            for (var i = SearchbarFilterList.length-1; i >= 0; i--){
                 if (color != null) {
                     if (!Pokemon[SearchbarFilterList[i]]["color"] == color.id){
                         SearchbarFilterList.splice(i,1);
@@ -314,7 +314,7 @@
                 }
             }
             var bodyType = document.querySelector('input[name="bodyType"]:checked');
-            for (var i = SearchbarFilterList.length-1; i > 0; i--){
+            for (var i = SearchbarFilterList.length-1; i >= 0; i--){
                 if(bodyType != null) {
                     if (!Pokemon[SearchbarFilterList[i]]["bodyType"] == bodyType.id){
                         var removed = SearchbarFilterList.splice(i,1);
