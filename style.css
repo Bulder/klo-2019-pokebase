@@ -284,8 +284,17 @@ button:hover {
     background: linear-gradient(135deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 47%, rgba(0,0,0,1) 47%, rgba(0,0,0,1) 53%, rgba(235,235,235,1) 53%, rgba(235,235,235,1) 100%);
 }
 
-
+#popupContainerContainer {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+    align-items: center;
+}
 #popupContainer {
+    flex-grow: 0;
+    flex-shrink: 0;
     z-index: 999999;
     background-color: white;
     border: black solid 2px;
