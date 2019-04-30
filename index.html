@@ -281,16 +281,43 @@
 
         function SeachbarFil(e){
             var SeachbarFilterList = [];
+            var TypeFilter = [];
             for (var i = 1; i < 152; i++){
-                var find = document.getElementById(i);
                 if (Pokemon[i]["name"].includes(e["srcElement"]["value"])) {
                     SeachbarFilterList.push(i);
-                    find.style.display = "";
-
-                }else{
-                    find.style.display = "none";
                 }
             }
+            for (var i = 0; i < SearchbarFilterList.length; i++){
+                if (TypeFilter.length == 1){
+                    if (!Pokemon[SeachbarFilterList[i]]["types"].includes(TypeFilter[0]){
+                        SearchbarFilterList.splice(i,1);
+                    }
+                }else if (TypeFilter.length == 2) {
+                    if (!Pokemon[SeachbarFilterList[i]]["types"] == TypeFilter){
+                        SearchbarFilterList.splice(i,1);
+                    }
+                }
+            }
+            for (var i = 0; i < SearchbarFilterList.length; i++){
+                var un = document.getElementById('ColorContainer').getElementsByTagName("input");
+                if (!Pokemon[SeachbarFilterList[i]]["color"] == un.checked.id){
+                    SearchbarFilterList.splice(i,1);
+                }
+            }
+            for (var i = 0; i < SearchbarFilterList.length; i++){
+                var un = document.getElementById('BodyTypeContainer').getElementsByTagName("input");
+                if (!Pokemon[SeachbarFilterList[i]]["bodyType"] == un.checked.id){
+                    SearchbarFilterList.splice(i,1);
+                }
+            }
+            for (var i = 1; i < 152; i++){
+                find = document.getElementById(i);
+                if (SearchbarFilterList.contains(i)){
+                    find.style.display = "";
+                    }else{
+                        find.style.display = "none";
+                    }
+                }
             console.log(SeachbarFilterList);
         }
 
