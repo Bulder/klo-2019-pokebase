@@ -300,15 +300,19 @@
                 }
             }
             for (var i = 0; i < SearchbarFilterList.length; i++){
-                var un = document.getElementById('ColorContainer').getElementsByTagName("input");
-                if (!Pokemon[SearchbarFilterList[i]]["color"] == un.checked.id){
-                    SearchbarFilterList.splice(i,1);
+                var color = document.querySelector('input[name="color"]:checked').id;
+                if (color != undefined) {
+                    if (!Pokemon[SearchbarFilterList[i]]["color"] == color){
+                        SearchbarFilterList.splice(i,1);
+                    }
                 }
             }
             for (var i = 0; i < SearchbarFilterList.length; i++){
-                var un = document.getElementById('BodyTypeContainer').getElementsByTagName("input");
-                if (!Pokemon[SearchbarFilterList[i]]["bodyType"] == un.checked.id){
-                    SearchbarFilterList.splice(i,1);
+                var bodyType = document.querySelector('input[name="bodyType"]:checked').id;
+                if(bodyType != undefined) {
+                    if (!Pokemon[SearchbarFilterList[i]]["bodyType"] == bodyType){
+                        SearchbarFilterList.splice(i,1);
+                    }
                 }
             }
             for (var i = 1; i < 152; i++){
