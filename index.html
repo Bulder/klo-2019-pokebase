@@ -300,7 +300,7 @@
                     }
                 }
                 else if (TypeFilter.length == 2) {
-                    if (!Pokemon[SearchbarFilterList[i]]["types"] == TypeFilter){
+                    if (!Pokemon[SearchbarFilterList[i]]["types"].toString() == TypeFilter.toString()){
                         SearchbarFilterList.splice(i,1);
                     }
                 }
