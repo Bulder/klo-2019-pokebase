@@ -293,36 +293,27 @@
                     SearchbarFilterList.push(i+1);
                 }
             }
-            console.log("initial searchspace is ", SearchbarFilterList);
-            console.log("filtering types", TypeFilter)
             for (var i = SearchbarFilterList.length-1; i > 0; i--){
                 if (TypeFilter.length == 1){
                     if (!Pokemon[SearchbarFilterList[i]]["types"].includes(TypeFilter[0])){
-                        var removed = SearchbarFilterList.splice(i,1);
-                        console.log("removed", Pokemon[removed[0]], "types were", Pokemon[SearchbarFilterList[i]]["types"]);
+                        SearchbarFilterList.splice(i,1);
                     }
                 }
                 else if (TypeFilter.length == 2) {
                     if (!Pokemon[SearchbarFilterList[i]]["types"] == TypeFilter){
-                        var removed = SearchbarFilterList.splice(i,1);
-                        console.log("removed", Pokemon[removed[0]], "types were", Pokemon[SearchbarFilterList[i]]["types"]);
+                        SearchbarFilterList.splice(i,1);
                     }
                 }
             }
             var color = document.querySelector('input[name="color"]:checked');
-            console.log("color to match is", color);
             for (var i = SearchbarFilterList.length-1; i > 0; i--){
                 if (color != null) {
                     if (!Pokemon[SearchbarFilterList[i]]["color"] == color.id){
-                        var removed = SearchbarFilterList.splice(i,1);
-                        console.log("removed", removed, "color was", Pokemon[SearchbarFilterList[i]]["color"]);
-
+                        SearchbarFilterList.splice(i,1);
                     }
                 }
             }
             var bodyType = document.querySelector('input[name="bodyType"]:checked');
-            console.log("bodyType", color);
-
             for (var i = SearchbarFilterList.length-1; i > 0; i--){
                 if(bodyType != null) {
                     if (!Pokemon[SearchbarFilterList[i]]["bodyType"] == bodyType.id){
