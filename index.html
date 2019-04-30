@@ -280,7 +280,7 @@
         SearchBar.addEventListener("change", SeachbarFil);
 
         function SeachbarFil(e){
-            var SearchbarFilterList = [];
+            var SearchbarFilterList = Pokemon;
             var TypeFilter = [];
             var typeButtons = document.getElementById('TypeGridContainer').getElementsByTagName("input");
             for (var i = 0; i < typeButtons.length; i++) {
