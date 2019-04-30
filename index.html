@@ -282,6 +282,16 @@
         function SeachbarFil(e){
             var SearchbarFilterList = [];
             var TypeFilter = [];
+            var typeButtons = document.getElementById('TypeGridContainer').getElementsByTagName("input");
+            for (var i = 0; i < typeButtons.length; i++) {
+                if(typeButtons[i].checked == true) {
+                    TypeFilter.push(typeButtons[i].id);
+                }
+            }
+            for (var i = 0; i < array.length; i++) {
+                array[i]
+            }
+
             for (var i = 1; i < 152; i++){
                 if (Pokemon[i]["name"].includes(e["srcElement"]["value"])) {
                     SearchbarFilterList.push(i);
@@ -300,17 +310,17 @@
                 }
             }
             for (var i = 0; i < SearchbarFilterList.length; i++){
-                var color = document.querySelector('input[name="color"]:checked').id;
+                var color = document.querySelector('input[name="color"]:checked');
                 if (color != undefined) {
-                    if (!Pokemon[SearchbarFilterList[i]]["color"] == color){
+                    if (!Pokemon[SearchbarFilterList[i]]["color"] == color.id){
                         SearchbarFilterList.splice(i,1);
                     }
                 }
             }
             for (var i = 0; i < SearchbarFilterList.length; i++){
-                var bodyType = document.querySelector('input[name="bodyType"]:checked').id;
+                var bodyType = document.querySelector('input[name="bodyType"]:checked');
                 if(bodyType != undefined) {
-                    if (!Pokemon[SearchbarFilterList[i]]["bodyType"] == bodyType){
+                    if (!Pokemon[SearchbarFilterList[i]]["bodyType"] == bodyType.id){
                         SearchbarFilterList.splice(i,1);
                     }
                 }
