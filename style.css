@@ -128,10 +128,14 @@ button:hover {
 #SortByContainer button:last-child {
     border-right: none;
 }
-#SortActive {
-    background-color: lightgreen !important;
+#SortReverse::after {
+    content: " ↑";
+    background-color: gray;
 }
-
+#Sorted::after {
+    content: " ↓";
+    background-color: gray;
+}
 /*type grid reset button color hack, this is the Fairy type color*/
 #TypeGridContainer + .resetButton {
     border-top: 1px rgb(244, 0, 232) solid;

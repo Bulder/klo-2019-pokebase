@@ -79,7 +79,7 @@
                 <p>Press enter to filter</p>
                 <h2 class="Underline">Sort by</h2>
                 <div id="SortByContainer">
-                    <button type="button" name="SortNum" id="SortActive">Num</button>
+                    <button type="button" name="SortNum">Num</button>
                     <button type="button" name="SortName">Name</button>
                     <button type="button" name="SortWeight">Weight</button>
                 </div>
@@ -342,6 +342,45 @@
                     }
                 }
             console.log(SearchbarFilterList);
+        }
+
+        var sortButtons = document.getElementById("SortByContainer");
+        sortButtons.onclick = sortHelper;
+
+        function sortHelper(event) {
+            for (var i = 0; i < sortButtons.children.length; i++) {
+                sortButtons.children[i].id = "";
+            }
+            if (event.srcElement.name == "SortNum") {
+                if (event.srcElement.id != "Sorted") {
+                    event.srcElement.id = "Sorted";
+                    sortPokecards();
+                }
+                else {
+                    event.srcElement.id = "SortReverse";
+                    sortPokecards("", "reverse");
+                }
+            }
+            else if (pressedButton == "SortWeight")  {
+                if (event.srcElement.id != "Sorted"){
+                    event.srcElement.id = "Sorted";
+                    sortPokecards("weight")
+                }
+                else {
+                    event.srcElement.id = "SortReverse";
+                    sortPokecards("", "reverse");
+                }
+            }
+            else if (pressedButton == "SortName"){
+                if(event.srcElement.id != "Sorted") {
+                    event.srcElement.id = "Sorted";
+                    sortPokecards("name")
+                }
+                else {
+                    event.srcElement.id = "SortReverse";
+                    sortPokecards("name", "reverse");
+                }
+            }
         }
 
         function sortPokecards(method, direction) {
