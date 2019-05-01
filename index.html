@@ -348,7 +348,7 @@
         sortButtons.onclick = sortHelper;
 
         function sortHelper(event) {
-            var sorted = (event.src.id != "Sorted");
+            var sorted = (event.srcElement.id != "Sorted");
             for (var i = 0; i < sortButtons.children.length; i++) {
                 sortButtons.children[i].id = "";
             }
