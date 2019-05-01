@@ -277,9 +277,18 @@
         }*/
 
         var SearchBar = document.getElementById("SearchBar");
-        SearchBar.addEventListener("change", SeachbarFil);
+        SearchBar.addEventListener("change", SearchbarFill);
 
-        function SeachbarFil(e){
+        var TypeFilter = document.getElementById("TypeGridContainer");
+        TypeFilter.onclick = SearchbarFill;
+
+        var ColorFilter = document.getElementById("ColorContainer");
+        ColorFilter.addEventListener("change", SearchbarFill);
+
+        var BodytypeFilter = document.getElementById("BodyTypeContainer");
+        BodytypeFilter.addEventListener("change", SearchbarFill);
+
+        function SearchbarFill(e){
             var SearchbarFilterList = [];
             var TypeFilter = [];
             var typeButtons = document.getElementById('TypeGridContainer').getElementsByTagName("input");
@@ -303,6 +312,9 @@
                     if (Pokemon[SearchbarFilterList[i]]["types"].toString() != TypeFilter.toString()){
                         SearchbarFilterList.splice(i,1);
                     }
+                }
+                else if (TypeFilter.lenght > 2){
+                    SearchbarFilterList = [];
                 }
             }
             var color = document.querySelector('input[name="color"]:checked');
@@ -330,6 +342,36 @@
                     }
                 }
             console.log(SearchbarFilterList);
+        }
+
+        function sortPokecards(method, direction) {
+            sort = [];
+            if (method == "name") {
+                for (var i = 1; i < 152; i++) {
+                    sort.push([Pokemon[i].name, i]);
+                }
+                sort.sort(function(a,b){
+                    if(a[0] < b[0]) { return -1;}
+                    if(a[0] > b[0]) { return 1; }
+                    return 0;
+                });
+            }
+            else if(method == "weight") {
+                for (var i = 1; i < 152; i++) {
+                    sort.push([Pokemon[i].weight, i]);
+                }
+                sort.sort(function(a,b){
+                    if(a[0] < b[0]) { return -1;}
+                    if(a[0] > b[0]) { return 1; }
+                    return 0;
+                });
+            }
+            if(direction == "reverse") {
+                sort = sort.reverse();
+            }
+            for (var i = 0; i < 151; i++) {
+                pokemonListContainer.children[i].style.order = sort[i][0];
+            }
         }
 
         var PopupContainer = document.getElementById("popupContainerContainer");
@@ -379,6 +421,5 @@
                 }
             }
         }
-
     </script>
 </html>
