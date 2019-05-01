@@ -424,6 +424,9 @@ tr td:nth-child(2) {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x:hidden
+    }
     #PokemonPanelContainer {
         flex-flow: column;
     }
@@ -439,7 +442,12 @@ tr td:nth-child(2) {
     }
 
     #SearchContainer {
-        height: calc(100vh - 16px);
-        right: 0px;
+        position: absolute;
+        height: calc(100vh - 52px);
+        right: -335px;
+        transition: right 0.1s;
+    }
+    #SearchContainer:hover {
+        right: -10px;
     }
 }
