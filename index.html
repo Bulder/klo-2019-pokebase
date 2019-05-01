@@ -435,8 +435,8 @@
             for(var type in Pokemon[i]["types"]) {
                 typeContainer.innerHTML = typeContainer.innerHTML + "<h2>" + Pokemon[i]["types"][type].toUpperCase() + "</h2>";
             }
-            infoContainer.children[0].textContent = "Weight: " + parseFloat(Pokemon[i]["weight"] / 10).toFixed(2);
-            infoContainer.children[1].textContent = "Height: " + parseFloat(Pokemon[i]["height"] / 10).toFixed(2);
+            infoContainer.children[0].textContent = "Weight: " + Pokemon[i]["weight"] + "Kg";
+            infoContainer.children[1].textContent = "Height: " + parseFloat(Pokemon[i]["height"] / 10).toFixed(2) + "m";
             infoContainer.children[2].textContent = "Color: " + Pokemon[i]["color"].toUpperCase();
             infoContainer.children[3].children[0].src = "./img/footprints/" + i + ".png";
             cry[0].src = "./aud/cries/" + i + ".ogg";
