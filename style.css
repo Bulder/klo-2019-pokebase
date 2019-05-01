@@ -130,10 +130,14 @@ button:hover {
 }
 #SortReverse::after {
     content: " ↑";
+}
+#SortReverse {
     background-color: gray;
 }
 #Sorted::after {
     content: " ↓";
+}
+#Sorted {
     background-color: gray;
 }
 /*type grid reset button color hack, this is the Fairy type color*/

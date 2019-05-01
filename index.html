@@ -361,7 +361,7 @@
                     sortPokecards("", "reverse");
                 }
             }
-            else if (pressedButton == "SortWeight")  {
+            else if (event.srcElement.id == "SortWeight")  {
                 if (event.srcElement.id != "Sorted"){
                     event.srcElement.id = "Sorted";
                     sortPokecards("weight")
@@ -371,7 +371,7 @@
                     sortPokecards("weight", "reverse");
                 }
             }
-            else if (pressedButton == "SortName"){
+            else if (event.srcElement.id == "SortName"){
                 if(event.srcElement.id != "Sorted") {
                     event.srcElement.id = "Sorted";
                     sortPokecards("name")
