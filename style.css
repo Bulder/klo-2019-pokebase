@@ -74,6 +74,7 @@ button:hover {
 
 #SearchContainer {
     position: relative;
+    background-color: white;
     flex-shrink: 0;
     width: calc(330px - 16px);
     margin-right: 8px;
@@ -130,7 +131,7 @@ button:hover {
 }
 #SortReverse::after {
     content: " ↑";
-} 
+}
 #SortReverse {
     background-color: gray;
 }
@@ -420,4 +421,25 @@ tr td:nth-child(2) {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     border-right: none;
+}
+
+@media (max-width: 768px) {
+    #PokemonPanelContainer {
+        flex-flow: column;
+    }
+    #InfoPanel {
+        max-width: 100%;
+        border-right: none;
+    }
+    #statTable {
+        max-height: none;
+    }
+    tr td:nth-child(2) {
+        padding: 8px;
+    }
+
+    #SearchContainer {
+        height: calc(100vh - 16px);
+        right: 0px;
+    }
 }
