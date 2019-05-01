@@ -299,7 +299,7 @@
                 }
             }
             for (var i = 0; i < 151; i++){
-                if (Pokemon[i+1]["name"].includes(SearchBar.value)) {
+                if (Pokemon[i+1]["name"].includes(SearchBar.value.toLowerCase())) {
                     SearchbarFilterList.push(i+1);
                 }
             }
