@@ -313,7 +313,7 @@
                         SearchbarFilterList.splice(i,1);
                     }
                 }
-                else if (TypeFilter.lenght > 2){
+                else if (TypeFilter.length > 2){
                     SearchbarFilterList = [];
                 }
             }
@@ -345,7 +345,7 @@
         }
 
         function sortPokecards(method, direction) {
-            sort = [];
+            var sort = [];
             if (method == "name") {
                 for (var i = 1; i < 152; i++) {
                     sort.push([Pokemon[i].name, i]);
