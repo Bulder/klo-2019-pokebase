@@ -130,7 +130,7 @@ button:hover {
 }
 #SortReverse::after {
     content: " ↑";
-}
+} 
 #SortReverse {
     background-color: gray;
 }
