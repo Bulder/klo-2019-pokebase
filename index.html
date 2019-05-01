@@ -348,11 +348,12 @@
         sortButtons.onclick = sortHelper;
 
         function sortHelper(event) {
+            var sorted = (event.src.id != "Sorted");
             for (var i = 0; i < sortButtons.children.length; i++) {
                 sortButtons.children[i].id = "";
             }
             if (event.srcElement.name == "SortNum") {
-                if (event.srcElement.id != "Sorted") {
+                if (sorted) {
                     event.srcElement.id = "Sorted";
                     sortPokecards();
                 }
@@ -362,7 +363,7 @@
                 }
             }
             else if (event.srcElement.name == "SortWeight")  {
-                if (event.srcElement.id != "Sorted"){
+                if (sorted){
                     event.srcElement.id = "Sorted";
                     sortPokecards("weight")
                 }
@@ -372,7 +373,7 @@
                 }
             }
             else if (event.srcElement.name == "SortName"){
-                if(event.srcElement.id != "Sorted") {
+                if(sorted) {
                     event.srcElement.id = "Sorted";
                     sortPokecards("name")
                 }
