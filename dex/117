@@ -1,1 +1,1 @@
-{"name":"seadra","types":["water"],"weight":25,"height":1.2,"color":"blue","bodytype":"","stats":{"speed":85,"special-defense":45,"special-attack":95,"defense":95,"attack":65,"hp":55}}
+{"name":"seadra","types":["water"],"weight":25,"height":1.2,"color":"blue","bodytype":"headAndBase","stats":{"speed":85,"special-defense":45,"special-attack":95,"defense":95,"attack":65,"hp":55}}

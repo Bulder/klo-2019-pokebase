@@ -1,1 +1,1 @@
-{"name":"nidoqueen","types":["ground","poison"],"weight":60,"height":1.3,"color":"blue","bodytype":"","stats":{"speed":76,"special-defense":85,"special-attack":75,"defense":87,"attack":92,"hp":90}}
+{"name":"nidoqueen","types":["ground","poison"],"weight":60,"height":1.3,"color":"blue","bodytype":"bipedWithTail","stats":{"speed":76,"special-defense":85,"special-attack":75,"defense":87,"attack":92,"hp":90}}

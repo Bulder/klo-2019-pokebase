@@ -1,1 +1,1 @@
-{"name":"jolteon","types":["electric"],"weight":24.5,"height":0.8,"color":"yellow","bodytype":"","stats":{"speed":130,"special-defense":95,"special-attack":110,"defense":60,"attack":65,"hp":65}}
+{"name":"jolteon","types":["electric"],"weight":24.5,"height":0.8,"color":"yellow","bodytype":"quadruped","stats":{"speed":130,"special-defense":95,"special-attack":110,"defense":60,"attack":65,"hp":65}}

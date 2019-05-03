@@ -1,1 +1,1 @@
-{"name":"ponyta","types":["fire"],"weight":30,"height":1,"color":"yellow","bodytype":"","stats":{"speed":90,"special-defense":65,"special-attack":65,"defense":55,"attack":85,"hp":50}}
+{"name":"ponyta","types":["fire"],"weight":30,"height":1,"color":"yellow","bodytype":"quadruped","stats":{"speed":90,"special-defense":65,"special-attack":65,"defense":55,"attack":85,"hp":50}}

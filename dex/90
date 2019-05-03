@@ -1,1 +1,1 @@
-{"name":"shellder","types":["water"],"weight":4,"height":0.3,"color":"purple","bodytype":"","stats":{"speed":40,"special-defense":25,"special-attack":45,"defense":100,"attack":65,"hp":30}}
+{"name":"shellder","types":["water"],"weight":4,"height":0.3,"color":"purple","bodytype":"head","stats":{"speed":40,"special-defense":25,"special-attack":45,"defense":100,"attack":65,"hp":30}}

@@ -1,1 +1,1 @@
-{"name":"arcanine","types":["fire"],"weight":155,"height":1.9,"color":"brown","bodytype":"","stats":{"speed":95,"special-defense":80,"special-attack":100,"defense":80,"attack":110,"hp":90}}
+{"name":"arcanine","types":["fire"],"weight":155,"height":1.9,"color":"brown","bodytype":"quadruped","stats":{"speed":95,"special-defense":80,"special-attack":100,"defense":80,"attack":110,"hp":90}}
