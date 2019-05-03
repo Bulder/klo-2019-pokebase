@@ -1,1 +1,1 @@
-{"name":"muk","types":["poison"],"weight":30,"height":1.2,"color":"purple","bodytype":"","stats":{"speed":50,"special-defense":100,"special-attack":65,"defense":75,"attack":105,"hp":105}}
+{"name":"muk","types":["poison"],"weight":30,"height":1.2,"color":"purple","bodytype":"headAndArms","stats":{"speed":50,"special-defense":100,"special-attack":65,"defense":75,"attack":105,"hp":105}}

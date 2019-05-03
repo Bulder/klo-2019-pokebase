@@ -1,1 +1,1 @@
-{"name":"grimer","types":["poison"],"weight":30,"height":0.9,"color":"purple","bodytype":"","stats":{"speed":25,"special-defense":50,"special-attack":40,"defense":50,"attack":80,"hp":80}}
+{"name":"grimer","types":["poison"],"weight":30,"height":0.9,"color":"purple","bodytype":"headAndArms","stats":{"speed":25,"special-defense":50,"special-attack":40,"defense":50,"attack":80,"hp":80}}
