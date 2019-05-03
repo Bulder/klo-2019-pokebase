@@ -1,1 +1,1 @@
-{"name":"poliwag","types":["water"],"weight":12.4,"height":0.6,"color":"blue","bodytype":"","stats":{"speed":90,"special-defense":40,"special-attack":40,"defense":40,"attack":50,"hp":40}}
+{"name":"poliwag","types":["water"],"weight":12.4,"height":0.6,"color":"blue","bodytype":"headAndLegs","stats":{"speed":90,"special-defense":40,"special-attack":40,"defense":40,"attack":50,"hp":40}}

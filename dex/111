@@ -1,1 +1,1 @@
-{"name":"rhyhorn","types":["rock","ground"],"weight":115,"height":1,"color":"gray","bodytype":"","stats":{"speed":25,"special-defense":30,"special-attack":30,"defense":95,"attack":85,"hp":80}}
+{"name":"rhyhorn","types":["rock","ground"],"weight":115,"height":1,"color":"gray","bodytype":"quadruped","stats":{"speed":25,"special-defense":30,"special-attack":30,"defense":95,"attack":85,"hp":80}}

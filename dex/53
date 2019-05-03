@@ -1,1 +1,1 @@
-{"name":"persian","types":["normal"],"weight":32,"height":1,"color":"yellow","bodytype":"","stats":{"speed":115,"special-defense":65,"special-attack":65,"defense":60,"attack":70,"hp":65}}
+{"name":"persian","types":["normal"],"weight":32,"height":1,"color":"yellow","bodytype":"quadruped","stats":{"speed":115,"special-defense":65,"special-attack":65,"defense":60,"attack":70,"hp":65}}

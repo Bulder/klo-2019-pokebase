@@ -1,1 +1,1 @@
-{"name":"charmeleon","types":["fire"],"weight":19,"height":1.1,"color":"red","bodytype":"","stats":{"speed":80,"special-defense":65,"special-attack":80,"defense":58,"attack":64,"hp":58}}
+{"name":"charmeleon","types":["fire"],"weight":19,"height":1.1,"color":"red","bodytype":"bipedWithTail","stats":{"speed":80,"special-defense":65,"special-attack":80,"defense":58,"attack":64,"hp":58}}

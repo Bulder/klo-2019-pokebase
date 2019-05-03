@@ -1,1 +1,1 @@
-{"name":"golduck","types":["water"],"weight":76.6,"height":1.7,"color":"blue","bodytype":"","stats":{"speed":85,"special-defense":80,"special-attack":95,"defense":78,"attack":82,"hp":80}}
+{"name":"golduck","types":["water"],"weight":76.6,"height":1.7,"color":"blue","bodytype":"bipedWithTail","stats":{"speed":85,"special-defense":80,"special-attack":95,"defense":78,"attack":82,"hp":80}}

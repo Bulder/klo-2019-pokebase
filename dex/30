@@ -1,1 +1,1 @@
-{"name":"nidorina","types":["poison"],"weight":20,"height":0.8,"color":"blue","bodytype":"","stats":{"speed":56,"special-defense":55,"special-attack":55,"defense":67,"attack":62,"hp":70}}
+{"name":"nidorina","types":["poison"],"weight":20,"height":0.8,"color":"blue","bodytype":"quadruped","stats":{"speed":56,"special-defense":55,"special-attack":55,"defense":67,"attack":62,"hp":70}}

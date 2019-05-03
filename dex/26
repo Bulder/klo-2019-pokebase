@@ -1,1 +1,1 @@
-{"name":"raichu","types":["electric"],"weight":30,"height":0.8,"color":"yellow","bodytype":"","stats":{"speed":110,"special-defense":80,"special-attack":90,"defense":55,"attack":90,"hp":60}}
+{"name":"raichu","types":["electric"],"weight":30,"height":0.8,"color":"yellow","bodytype":"bipedWithTail","stats":{"speed":110,"special-defense":80,"special-attack":90,"defense":55,"attack":90,"hp":60}}

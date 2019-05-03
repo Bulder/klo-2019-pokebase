@@ -1,1 +1,1 @@
-{"name":"ditto","types":["normal"],"weight":4,"height":0.3,"color":"purple","bodytype":"","stats":{"speed":48,"special-defense":48,"special-attack":48,"defense":48,"attack":48,"hp":48}}
+{"name":"ditto","types":["normal"],"weight":4,"height":0.3,"color":"purple","bodytype":"head","stats":{"speed":48,"special-defense":48,"special-attack":48,"defense":48,"attack":48,"hp":48}}

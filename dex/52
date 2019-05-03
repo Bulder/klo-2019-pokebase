@@ -1,1 +1,1 @@
-{"name":"meowth","types":["normal"],"weight":4.2,"height":0.4,"color":"yellow","bodytype":"","stats":{"speed":90,"special-defense":40,"special-attack":40,"defense":35,"attack":45,"hp":40}}
+{"name":"meowth","types":["normal"],"weight":4.2,"height":0.4,"color":"yellow","bodytype":"quadruped","stats":{"speed":90,"special-defense":40,"special-attack":40,"defense":35,"attack":45,"hp":40}}

@@ -1,1 +1,1 @@
-{"name":"goldeen","types":["water"],"weight":15,"height":0.6,"color":"red","bodytype":"","stats":{"speed":63,"special-defense":50,"special-attack":35,"defense":60,"attack":67,"hp":45}}
+{"name":"goldeen","types":["water"],"weight":15,"height":0.6,"color":"red","bodytype":"fins","stats":{"speed":63,"special-defense":50,"special-attack":35,"defense":60,"attack":67,"hp":45}}

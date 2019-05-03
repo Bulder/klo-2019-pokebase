@@ -1,1 +1,1 @@
-{"name":"horsea","types":["water"],"weight":8,"height":0.4,"color":"blue","bodytype":"","stats":{"speed":60,"special-defense":25,"special-attack":70,"defense":70,"attack":40,"hp":30}}
+{"name":"horsea","types":["water"],"weight":8,"height":0.4,"color":"blue","bodytype":"headAndBase","stats":{"speed":60,"special-defense":25,"special-attack":70,"defense":70,"attack":40,"hp":30}}

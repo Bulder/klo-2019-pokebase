@@ -1,1 +1,1 @@
-{"name":"pikachu","types":["electric"],"weight":6,"height":0.4,"color":"yellow","bodytype":"","stats":{"speed":90,"special-defense":50,"special-attack":50,"defense":40,"attack":55,"hp":35}}
+{"name":"pikachu","types":["electric"],"weight":6,"height":0.4,"color":"yellow","bodytype":"quadruped","stats":{"speed":90,"special-defense":50,"special-attack":50,"defense":40,"attack":55,"hp":35}}
