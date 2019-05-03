@@ -240,7 +240,7 @@
 
         var typeGridResetButton = document.getElementById("TypeUnfilterButton");
         typeGridResetButton.onclick = unfilterTypeGrid;
-        typeGridResetButton.addEventListener("change", SearchbarFill);
+        typeGridResetButton.addEventListener("click", SearchbarFill);
 
 
         function unfilterTypeGrid() {
@@ -252,7 +252,7 @@
 
         var ColorResetButton = document.getElementById("colorUnfilterButton");
         ColorResetButton.onclick = unfilterColor;
-        ColorResetButton.addEventListener("change", SearchbarFill);
+        ColorResetButton.addEventListener("click", SearchbarFill);
 
         function unfilterColor() {
             var un = document.getElementById('ColorContainer').getElementsByTagName("input");
@@ -263,7 +263,7 @@
 
         var BodyTypeResetButton = document.getElementById("BodyTypeUnfilterButton");
         BodyTypeResetButton.onclick = unfilterBodyType;
-        BodyTypeResetButton.addEventListener("change", SearchbarFill);
+        BodyTypeResetButton.addEventListener("click", SearchbarFill);
 
         function unfilterBodyType() {
             var un = document.getElementById('BodyTypeContainer').getElementsByTagName("input");
