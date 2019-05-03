@@ -1,1 +1,1 @@
-{"name":"hitmonlee","types":["fighting"],"weight":49.8,"height":1.5,"color":"brown","bodytype":"","stats":{"speed":87,"special-defense":110,"special-attack":35,"defense":53,"attack":120,"hp":50}}
+{"name":"hitmonlee","types":["fighting"],"weight":49.8,"height":1.5,"color":"brown","bodytype":"bipedNoTail","stats":{"speed":87,"special-defense":110,"special-attack":35,"defense":53,"attack":120,"hp":50}}

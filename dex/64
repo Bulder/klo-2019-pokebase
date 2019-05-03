@@ -1,1 +1,1 @@
-{"name":"kadabra","types":["psychic"],"weight":56.5,"height":1.3,"color":"brown","bodytype":"","stats":{"speed":105,"special-defense":70,"special-attack":120,"defense":30,"attack":35,"hp":40}}
+{"name":"kadabra","types":["psychic"],"weight":56.5,"height":1.3,"color":"brown","bodytype":"bipedWithTail","stats":{"speed":105,"special-defense":70,"special-attack":120,"defense":30,"attack":35,"hp":40}}

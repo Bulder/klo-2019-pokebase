@@ -1,1 +1,1 @@
-{"name":"wigglytuff","types":["fairy","normal"],"weight":12,"height":1,"color":"pink","bodytype":"","stats":{"speed":45,"special-defense":50,"special-attack":85,"defense":45,"attack":70,"hp":140}}
+{"name":"wigglytuff","types":["fairy","normal"],"weight":12,"height":1,"color":"pink","bodytype":"bipedNoTail","stats":{"speed":45,"special-defense":50,"special-attack":85,"defense":45,"attack":70,"hp":140}}

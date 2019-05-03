@@ -1,1 +1,1 @@
-{"name":"articuno","types":["flying","ice"],"weight":55.4,"height":1.7,"color":"blue","bodytype":"","stats":{"speed":85,"special-defense":125,"special-attack":95,"defense":100,"attack":85,"hp":90}}
+{"name":"articuno","types":["flying","ice"],"weight":55.4,"height":1.7,"color":"blue","bodytype":"oneWings","stats":{"speed":85,"special-defense":125,"special-attack":95,"defense":100,"attack":85,"hp":90}}

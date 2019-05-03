@@ -1,1 +1,1 @@
-{"name":"snorlax","types":["normal"],"weight":460,"height":2.1,"color":"black","bodytype":"","stats":{"speed":30,"special-defense":110,"special-attack":65,"defense":65,"attack":110,"hp":160}}
+{"name":"snorlax","types":["normal"],"weight":460,"height":2.1,"color":"black","bodytype":"bipedNoTail","stats":{"speed":30,"special-defense":110,"special-attack":65,"defense":65,"attack":110,"hp":160}}

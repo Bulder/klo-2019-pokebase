@@ -1,1 +1,1 @@
-{"name":"jigglypuff","types":["fairy","normal"],"weight":5.5,"height":0.5,"color":"pink","bodytype":"","stats":{"speed":20,"special-defense":25,"special-attack":45,"defense":20,"attack":45,"hp":115}}
+{"name":"jigglypuff","types":["fairy","normal"],"weight":5.5,"height":0.5,"color":"pink","bodytype":"bipedNoTail","stats":{"speed":20,"special-defense":25,"special-attack":45,"defense":20,"attack":45,"hp":115}}
