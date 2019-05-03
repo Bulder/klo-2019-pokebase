@@ -474,7 +474,7 @@ tr td:nth-child(2) {
         right: calc(100% - 10px);
         top: 45%;
     }
-    #popupContainer {
+    #popupContainerContainer {
         align-items: start;
     }
 }
