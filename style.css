@@ -384,6 +384,8 @@ tr td:nth-child(1){
 }
 tr td:nth-child(2) {
     padding-left: 6px;
+    border: dashed 1px gray;
+    border-left: none;
 }
 #InfoPanel {
     border-right: solid black 2px;
