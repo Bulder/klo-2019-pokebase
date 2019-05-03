@@ -242,6 +242,8 @@
 
         var typeGridResetButton = document.getElementById("TypeUnfilterButton");
         typeGridResetButton.onclick = unfilterTypeGrid;
+        typeGridResetButton.addEventListener("change", SearchbarFill);
+
 
         function unfilterTypeGrid() {
             var un = document.getElementById('TypeGridContainer').getElementsByTagName("input");
@@ -252,6 +254,7 @@
 
         var ColorResetButton = document.getElementById("colorUnfilterButton");
         ColorResetButton.onclick = unfilterColor;
+        ColorResetButton.addEventListener("change", SearchbarFill);
 
         function unfilterColor() {
             var un = document.getElementById('ColorContainer').getElementsByTagName("input");
@@ -262,6 +265,7 @@
 
         var BodyTypeResetButton = document.getElementById("BodyTypeUnfilterButton");
         BodyTypeResetButton.onclick = unfilterBodyType;
+        BodyTypeResetButton.addEventListener("change", SearchbarFill);
 
         function unfilterBodyType() {
             var un = document.getElementById('BodyTypeContainer').getElementsByTagName("input");
@@ -321,7 +325,7 @@
             var color = document.querySelector('input[name="color"]:checked');
             for (var i = SearchbarFilterList.length-1; i >= 0; i--){
                 if (color != null) {
-                    if (Pokemon[SearchbarFilterList[i]]["color"] != color.id){
+                    if (!Pokemon[SearchbarFilterList[i]]["color"] == color.id){
                         SearchbarFilterList.splice(i,1);
                     }
                 }
@@ -329,8 +333,8 @@
             var bodyType = document.querySelector('input[name="bodyType"]:checked');
             for (var i = SearchbarFilterList.length-1; i >= 0; i--){
                 if(bodyType != null) {
-                    if (Pokemon[SearchbarFilterList[i]]["bodytype"] != bodyType.id){
-                        SearchbarFilterList.splice(i,1);
+                    if (!Pokemon[SearchbarFilterList[i]]["bodyType"] == bodyType.id){
+                        var removed = SearchbarFilterList.splice(i,1);
                     }
                 }
             }
