@@ -429,6 +429,16 @@ tr td:nth-child(2) {
         width: 100vw;
         height: 100vh;
     }
+    #popupContainer {
+        width: calc(100% - 16px);
+        max-width: none;
+        margin-top: 16px;
+    }
+    #closeInfoButton {
+        top: calc(100% + 8px);
+        width: calc(100% - 32px);
+        left: 16px;
+    }
     #PokemonPanelContainer {
         flex-flow: column;
     }
@@ -463,5 +473,8 @@ tr td:nth-child(2) {
         position: absolute;
         right: calc(100% - 10px);
         top: 45%;
+    }
+    #popupContainer {
+        align-items: start;
     }
 }
